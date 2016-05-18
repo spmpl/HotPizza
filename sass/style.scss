@@ -171,6 +171,7 @@ body{
 	text-shadow: 0 6px 18.8px rgba(0, 0, 0, 0.47);
 	color: #ff0000;
 	text-transform: uppercase;
+	font-family: 'KelsonBold';
 	.main-header__title-big{
 		font-size: 69px;
 	}
@@ -184,7 +185,7 @@ body{
 	display: flex;
 	background: url(../img/bg-wood.png) no-repeat;
 	min-width: 1300px;
-	height: 800px;
+	height: 1616px;
 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -201,6 +202,7 @@ body{
 		text-align: center;
 		text-shadow: #000 1px 1px 0, #000 -1px -1px 0, 
 		#000  -1px 1px 0, #000  1px -1px 0;
+		font-family: 'KelsonBold';
 	}
 
 	h1::after{
@@ -224,6 +226,7 @@ body{
 	#253a55 3px 3px 0, #253a55 1px -1px 0;
 	color: #fff;
 	text-align: center;
+	font-family: 'KelsonBold';
 }
 
 .main-menu__pizza-product{
@@ -235,10 +238,47 @@ margin-right: 180px;
 }
 
 .main-menu__pizza-product-cart{
+	position: relative;
+	top: 15px;
 	width: 183px;
 	height: 50px;
 	background-color: #b00;
-	background-image:linear-gradient(to right, #ffae00 50%, #ccc9c4 50%, #FFFFFF 33%, #ffffff 184%);
+	background-image:linear-gradient(to right, #ffae00 50%, #ccc9c4 50%, #ccc9c4 33%, #ccc9c4 184%);
 	border-radius: 10px;
 	box-shadow: 0 7px 13px rgba(0, 0, 0, 0.55), inset 0 -1px 0 rgba(255, 255, 255, 0.42);
+}
+
+.main-menu__pizza-cash{
+	position: absolute;
+	top: 8px;
+    left: 7px;
+	display: inline-block;
+	font-size: 35px;
+	font-family: 'KelsonBold';
+
+	span{
+		font-size: 21px;
+	}
+
+}
+
+.main-menu__pizza-product--add-cart{
+	position: absolute;
+	right: 0;
+	top: 10px;
+	left: 97px;
+	display: inline-block;
+	font-size: 16px;
+	text-transform: uppercase;
+	font-family: 'KelsonBold';
+	cursor: pointer;
+}
+
+.main-menu_pizza-product-name{
+	text-align: center;
+	margin-top: 13px;
+	font-family: 'KelsonBold';
+	font-size: 25px;
+	color: #e29a00;
+	text-transform: uppercase;
 }
