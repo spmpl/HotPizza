@@ -33,26 +33,26 @@ body{
 
 
 .main-header__blur-header{
-  height: 147px;
-  width: 100%;
-  margin: -20px auto;
-  position: absolute;
-  top: 20px;
-  filter: blur(10px);
-  -webkit-filter: blur(10px);
-  -moz-filter: blur(10px);
-  -o-filter: blur(10px);
-  -ms-filter: blur(10px);
-  overflow: hidden;
-  z-index: 1;
+	height: 147px;
+	width: 100%;
+	margin: -20px auto;
+	position: absolute;
+	top: 20px;
+	filter: blur(10px);
+	-webkit-filter: blur(10px);
+	-moz-filter: blur(10px);
+	-o-filter: blur(10px);
+	-ms-filter: blur(10px);
+	overflow: hidden;
+	z-index: 1;
 }
 
 .main-header__blur-header::after {
-  content: '';
-  height: 100%;
-  width: 100%;
-  background: rgba(255, 255, 255, .2);
-  position: absolute;
+	content: '';
+	height: 100%;
+	width: 100%;
+	background: rgba(255, 255, 255, .2);
+	position: absolute;
 }
 
 .main-header__logo{
@@ -64,7 +64,7 @@ body{
 }
 
 .main-header__information{
-    position: relative;
+	position: relative;
 	display: inline-block;
 	margin-top: 35px;
 	margin-left: 50px;
@@ -72,7 +72,7 @@ body{
 	font-size: 20px;
 	color: #cac9c9;
 	font-style: 'KelsonRegular';
-    z-index: 10;
+	z-index: 10;
 	span{
 		font-family: 'KelsonBold';
 	}
@@ -96,7 +96,7 @@ body{
 }
 
 .main-header__navigation{
-    position: relative;
+	position: relative;
 	margin-top: 45px;
 	z-index: 10;
 	li{    
@@ -132,8 +132,8 @@ body{
 	box-shadow: 0px 13px 18px 0px rgba(0, 0, 0, 0.31),inset 0px -1px 0px 0px rgba(255, 120, 0, 0.004);
 	background: #ff0000  url("../img/sprite.png") no-repeat;
 	background-position: 107px -562px;
-    z-index: 10;
-    cursor: pointer;
+	z-index: 10;
+	cursor: pointer;
 	p,
 	span{
 		margin: 10px 13px;
@@ -156,9 +156,9 @@ body{
 }
 
 .main-header__pizza-background{
-    position: absolute;
-    right: 0;
-    top: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
 	background: url(../img/pizza-bg.png) no-repeat;
 	min-width: 557px;
 	height: 914px;
@@ -167,18 +167,18 @@ body{
 }
 
 .main-header__title{
-     margin-top: 165px;
-     text-shadow: 0 6px 18.8px rgba(0, 0, 0, 0.47);
-     color: #ff0000;
-     text-transform: uppercase;
-     .main-header__title-big{
-     	font-size: 69px;
-     }
-     .main-header__title-small{
-     	margin-top: 15px;
-     	font-size: 36px;
-     }
- }
+	margin-top: 165px;
+	text-shadow: 0 6px 18.8px rgba(0, 0, 0, 0.47);
+	color: #ff0000;
+	text-transform: uppercase;
+	.main-header__title-big{
+		font-size: 69px;
+	}
+	.main-header__title-small{
+		margin-top: 15px;
+		font-size: 36px;
+	}
+}
 
 .main-menu{
 	display: flex;
@@ -186,17 +186,59 @@ body{
 	min-width: 1300px;
 	height: 800px;
 
-		-webkit-background-size: cover;
+	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
 }
 
 .main-menu__title{
+	position: relative;
 	margin-top: 275px;
 	h1{
-        font-size: 45px;
-        color: #ffae00;
-        text-align: center;
+		font-size: 45px;
+		color: #e79e00;
+		text-align: center;
+		text-shadow: #000 1px 1px 0, #000 -1px -1px 0, 
+		#000  -1px 1px 0, #000  1px -1px 0;
 	}
+
+	h1::after{
+		position: absolute;
+		content: ''; 
+		background: url(../img/bg-menu-img.png) no-repeat;
+		min-width: 202px;
+		height: 127px;
+		margin-left: -143px;
+		top: -42px;
+		opacity: 0.5;
+	}
+}
+
+.main-menu__pizza-title{
+	margin-top: 85px;
+	margin-bottom: 55px;
+	text-transform: uppercase;
+	font-size: 35px;
+	text-shadow: #253a55 1px 1px 0, #253a55 -1px -1px 0, 
+	#253a55 3px 3px 0, #253a55 1px -1px 0;
+	color: #fff;
+	text-align: center;
+}
+
+.main-menu__pizza-product{
+float: left;
+margin-right: 180px;
+&:last-child{
+	margin-right: 0;
+}
+}
+
+.main-menu__pizza-product-cart{
+	width: 183px;
+	height: 50px;
+	background-color: #b00;
+	background-image:linear-gradient(to right, #ffae00 50%, #ccc9c4 50%, #FFFFFF 33%, #ffffff 184%);
+	border-radius: 10px;
+	box-shadow: 0 7px 13px rgba(0, 0, 0, 0.55), inset 0 -1px 0 rgba(255, 255, 255, 0.42);
 }
