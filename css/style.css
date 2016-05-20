@@ -151,7 +151,7 @@ body {
   border-radius: 10px;
   box-shadow: 0px 13px 18px 0px rgba(0, 0, 0, 0.31), inset 0px -1px 0px 0px rgba(255, 120, 0, 0.004);
   background: #ff0000 url("../img/sprite.png") no-repeat;
-  background-position: 107px -562px;
+  background-position: 107px -704px;
   z-index: 10;
   cursor: pointer; }
   .main-header__cart p,
@@ -242,7 +242,8 @@ body {
   background-color: #b00;
   background-image: linear-gradient(to right, #ffae00 50%, #ccc9c4 50%, #ccc9c4 33%, #ccc9c4 184%);
   border-radius: 10px;
-  box-shadow: 0 7px 13px rgba(0, 0, 0, 0.55), inset 0 -1px 0 rgba(255, 255, 255, 0.42); }
+  box-shadow: 0 7px 13px rgba(0, 0, 0, 0.55), inset 0 -1px 0 rgba(255, 255, 255, 0.42);
+  cursor: pointer; }
 
 .main-menu__cash {
   position: absolute;
@@ -262,8 +263,7 @@ body {
   display: inline-block;
   font-size: 16px;
   text-transform: uppercase;
-  font-family: 'KelsonBold';
-  cursor: pointer; }
+  font-family: 'KelsonBold'; }
 
 .main-menu__product-name {
   text-align: center;
@@ -272,10 +272,6 @@ body {
   font-size: 25px;
   color: #e29a00;
   text-transform: uppercase; }
-
-.main-menu__drink {
-  position: relative;
-  top: 125px; }
 
 .main-menu__title--drink {
   margin-top: 85px;
@@ -357,7 +353,7 @@ body {
 .main-delivery {
   background: url(../img/delivery-bg.png) no-repeat;
   min-width: 1300px;
-  height: 845px;
+  height: 846px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -373,12 +369,132 @@ body {
   text-shadow: 1px 1px 2px black, 0 0 1em black; }
 
 .main-delivery__left--collum {
+  width: 465px;
   float: left;
   margin-top: 75px; }
   .main-delivery__left--collum .main-delivery__content-top {
-    width: 40%;
     text-transform: uppercase;
     color: #fff;
     font-size: 24px;
     font-family: "KelsonBold";
-    text-align: left; }
+    text-align: left;
+    line-height: 30px; }
+  .main-delivery__left--collum .main-delivery__content-bottom {
+    margin-top: 20px;
+    text-transform: uppercase;
+    color: #c38b10;
+    font-size: 21px;
+    font-family: "KelsonRegular"; }
+    .main-delivery__left--collum .main-delivery__content-bottom b {
+      font-family: "KelsonBold"; }
+
+.main-delivery__right--collum {
+  position: relative;
+  float: right;
+  margin-top: 40px; }
+  .main-delivery__right--collum .main-delivery__map {
+    font-size: 21px;
+    color: #d2d0cc;
+    text-transform: uppercase; }
+    .main-delivery__right--collum .main-delivery__map p {
+      margin-bottom: 25px;
+      text-align: center; }
+
+.main-delivery__content {
+  display: inline-block;
+  float: left;
+  width: 100%;
+  margin: 93px 35px 0; }
+  .main-delivery__content .main-delivery__information {
+    display: inline-block;
+    margin-right: 170px; }
+    .main-delivery__content .main-delivery__information p {
+      padding-top: 45px;
+      font-family: "KelsonBold";
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 16px;
+      color: #dbddd9; }
+    .main-delivery__content .main-delivery__information img {
+      margin-left: 50px; }
+    .main-delivery__content .main-delivery__information:last-child {
+      margin-right: 0;
+      float: right; }
+      .main-delivery__content .main-delivery__information:last-child img {
+        margin-left: 35px; }
+    .main-delivery__content .main-delivery__information:nth-child(2) p {
+      margin-left: -15px; }
+
+.main-reviews {
+  background: url(../img/wall.png) no-repeat;
+  min-width: 1300px;
+  height: 633px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+.main-reviews__title {
+  margin-bottom: 80px;
+  padding-top: 50px;
+  font-size: 45px;
+  font-family: "KelsonBold";
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  text-shadow: 0 7px 10px rgba(0, 0, 0, 0.22); }
+
+.main-reviews__content {
+  margin: 0 35px; }
+
+.main-reviews__content--block {
+  float: left;
+  margin-right: 60px; }
+  .main-reviews__content--block:last-child {
+    margin-right: 0; }
+  .main-reviews__content--block p {
+    width: 250px;
+    text-align: center; }
+  .main-reviews__content--block img {
+    margin-left: 50px; }
+
+.main-footer {
+  height: 340px;
+  background: #ffae00; }
+  .main-footer .main-footer__title {
+    padding-top: 35px;
+    padding-bottom: 22px;
+    font-size: 25px;
+    font-family: "KelsonBold"; }
+  .main-footer a {
+    color: #000;
+    font-size: 20px;
+    text-decoration: none; }
+    .main-footer a:hover {
+      color: #fff; }
+
+.main-footer__collum-left {
+  float: left;
+  margin-right: 125px; }
+  .main-footer__collum-left p {
+    font-size: 20px;
+    font-family: "KelsonRegular";
+    color: #000000; }
+  .main-footer__collum-left .main-footer__collum-left--text-top {
+    padding-bottom: 30px; }
+
+.main-footer__collum-middle {
+  float: left; }
+  .main-footer__collum-middle li {
+    margin-bottom: 10px; }
+
+.main-footer__collum-right {
+  float: right;
+  margin-right: 120px; }
+  .main-footer__collum-right .main-footer__social {
+    position: relative; }
+  .main-footer__collum-right p {
+    position: absolute;
+    display: inline-block;
+    margin-top: 15px;
+    margin-left: 12px; }

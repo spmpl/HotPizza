@@ -1,0 +1,53 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-_____ {
+    width: 79px;
+    height: 79px;
+    background-position: -50px -50px;
+}
+
+.sprite-______-______ {
+    width: 101px;
+    height: 79px;
+    background-position: -50px -229px;
+}
+
+.sprite-_______ {
+    width: 77px;
+    height: 77px;
+    background-position: -50px -408px;
+}
+
+.sprite-_______ {
+    width: 26px;
+    height: 43px;
+    background-position: -50px -585px;
+}
+
+.sprite-_______-______ {
+    width: 34px;
+    height: 34px;
+    background-position: -50px -728px;
+}
+
+.sprite-instagram {
+    width: 46px;
+    height: 46px;
+    background-position: -50px -862px;
+}
+
+.sprite-twitter {
+    width: 45px;
+    height: 45px;
+    background-position: -50px -1008px;
+}
+
+.sprite-vk {
+    width: 45px;
+    height: 45px;
+    background-position: -50px -1153px;
+}
