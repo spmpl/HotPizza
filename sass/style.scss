@@ -288,6 +288,7 @@ body{
 	font-size: 25px;
 	color: #e29a00;
 	text-transform: uppercase;
+	text-shadow: 0 8px 7px rgba(0, 0, 0, 0.55);
 }
 
 
@@ -458,7 +459,7 @@ body{
 }
 
 .main-delivery__content{
-	display: inline-block;
+	display: flex;
 	float: left;
 	width: 100%;
 	margin: 93px 35px 0;
@@ -475,23 +476,38 @@ body{
 			color: #dbddd9;
 		}
 
-		img{
-			margin-left: 50px;
-		}
-
 		&:last-child{
 			margin-right: 0;
-			float: right;
-
-			img{
-				margin-left: 35px;
-			}
 		}
 
 		&:nth-child(2){
 			p{
-				    margin-left: -15px;
+				margin-left: -15px;
 			}
+		}
+
+		.main-delivery__icon-phone{
+			margin-left: 50px;
+			background: url(../img/sprite.png) no-repeat;
+    width: 77px;
+    height: 77px;
+    background-position: -50px -408px;  			
+		}
+
+		.main-delivery__icon-pizza{
+			margin-left: 50px;
+			background: url(../img/sprite.png) no-repeat;
+			background-position: -50px -50px;
+			width: 79px;
+			    height: 77px;   		
+		}
+
+		.main-delivery__icon-car{
+			margin-left: 40px;
+			background: url(../img/sprite.png) no-repeat;
+			background-position: -50px -229px;
+			width: 101px;
+			height: 75px;	
 		}
 	}
 }
@@ -529,8 +545,11 @@ body{
 		margin-right: 0;
 	}
 	p{
-        width: 250px;
-        text-align: center;
+		width: 250px;
+		text-align: center;
+		color: #fff;
+    font-family: KelsonRegular;
+    font-size: 19px;
 	}
 
 	img{
@@ -539,30 +558,30 @@ body{
 }
 
 .main-footer{
-	    height: 340px;
-		background: #ffae00;
+	height: 340px;
+	background: #ffae00;
 
-			.main-footer__title{ 
-        padding-top: 35px;
+	.main-footer__title{ 
+		padding-top: 35px;
 		padding-bottom: 22px;
 		font-size: 25px;
 		font-family: "KelsonBold";
 	}
 
-	     a{
-     	color: #000;
-     	font-size: 20px;
-     	text-decoration: none;
+	a{
+		color: #000;
+		font-size: 20px;
+		text-decoration: none;
 
-     	&:hover{
-     		color: #fff;
-     	}
-     }
+		&:hover{
+			color: #fff;
+		}
+	}
 }
 
 .main-footer__collum-left{
 	float: left;
-    margin-right: 125px;
+	margin-right: 125px;
 
 	p{
 		font-size: 20px;
@@ -571,7 +590,7 @@ body{
 	}
 
 	.main-footer__collum-left--text-top{
-         padding-bottom: 30px;
+		padding-bottom: 30px;
 	}
 }
 
@@ -585,14 +604,14 @@ body{
 
 .main-footer__collum-right{
 	float: right;
-    margin-right: 120px;
-    .main-footer__social{
-    	position: relative;
-    }
-    p{  
-    	position: absolute;
-    	display: inline-block;
-    	margin-top: 15px;
-    	margin-left: 12px;
-    }
+	margin-right: 120px;
+	.main-footer__social{
+		position: relative;
+	}
+	p{  
+		position: absolute;
+		display: inline-block;
+		margin-top: 15px;
+		margin-left: 12px;
+	}
 }

@@ -271,7 +271,8 @@ body {
   font-family: 'KelsonBold';
   font-size: 25px;
   color: #e29a00;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  text-shadow: 0 8px 7px rgba(0, 0, 0, 0.55); }
 
 .main-menu__title--drink {
   margin-top: 85px;
@@ -401,7 +402,7 @@ body {
       text-align: center; }
 
 .main-delivery__content {
-  display: inline-block;
+  display: flex;
   float: left;
   width: 100%;
   margin: 93px 35px 0; }
@@ -415,15 +416,28 @@ body {
       text-transform: uppercase;
       font-size: 16px;
       color: #dbddd9; }
-    .main-delivery__content .main-delivery__information img {
-      margin-left: 50px; }
     .main-delivery__content .main-delivery__information:last-child {
-      margin-right: 0;
-      float: right; }
-      .main-delivery__content .main-delivery__information:last-child img {
-        margin-left: 35px; }
+      margin-right: 0; }
     .main-delivery__content .main-delivery__information:nth-child(2) p {
       margin-left: -15px; }
+    .main-delivery__content .main-delivery__information .main-delivery__icon-phone {
+      margin-left: 50px;
+      background: url(../img/sprite.png) no-repeat;
+      width: 77px;
+      height: 77px;
+      background-position: -50px -408px; }
+    .main-delivery__content .main-delivery__information .main-delivery__icon-pizza {
+      margin-left: 50px;
+      background: url(../img/sprite.png) no-repeat;
+      background-position: -50px -50px;
+      width: 79px;
+      height: 77px; }
+    .main-delivery__content .main-delivery__information .main-delivery__icon-car {
+      margin-left: 40px;
+      background: url(../img/sprite.png) no-repeat;
+      background-position: -50px -229px;
+      width: 101px;
+      height: 75px; }
 
 .main-reviews {
   background: url(../img/wall.png) no-repeat;
@@ -454,7 +468,10 @@ body {
     margin-right: 0; }
   .main-reviews__content--block p {
     width: 250px;
-    text-align: center; }
+    text-align: center;
+    color: #fff;
+    font-family: KelsonRegular;
+    font-size: 19px; }
   .main-reviews__content--block img {
     margin-left: 50px; }
 
