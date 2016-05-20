@@ -464,6 +464,7 @@ body{
 	width: 100%;
 	margin: 93px 35px 0;
 	.main-delivery__information{
+		position: relative;
 		display: inline-block;
 		margin-right: 170px;
 
@@ -478,28 +479,51 @@ body{
 
 		&:last-child{
 			margin-right: 0;
+
 		}
 
-		&:nth-child(2){
-			p{
-				margin-left: -15px;
-			}
-		}
-
-		.main-delivery__icon-phone{
+		.main-delivery__icon-phone{	
+			width: 77px;
+			height: 77px;			
 			margin-left: 50px;
+			
 			background: url(../img/sprite.png) no-repeat;
-    width: 77px;
-    height: 77px;
-    background-position: -50px -408px;  			
+			background-position: -50px -408px;
+			&::after{
+				content: " ";
+				display: flex;
+				position: absolute;
+                right: -95px;
+                top: 55px;
+				width: 26px;
+				height: 43px;                
+				
+				background: url(../img/sprite.png) no-repeat;
+				background-position: -50px -585px;
+
+			}  			
 		}
 
 		.main-delivery__icon-pizza{
-			margin-left: 50px;
+			margin-left: 70px;
 			background: url(../img/sprite.png) no-repeat;
 			background-position: -50px -50px;
 			width: 79px;
-			    height: 77px;   		
+			height: 77px;
+			
+				&::after{
+				content: " ";
+				display: flex;
+				position: absolute;
+                right: -95px;
+                top: 55px;
+				width: 26px;
+				height: 43px;                
+				
+				background: url(../img/sprite.png) no-repeat;
+				background-position: -50px -585px;
+
+			}   		
 		}
 
 		.main-delivery__icon-car{
@@ -548,13 +572,22 @@ body{
 		width: 250px;
 		text-align: center;
 		color: #fff;
-    font-family: KelsonRegular;
-    font-size: 19px;
+		font-family: KelsonRegular;
+		font-size: 19px;
 	}
 
 	img{
 		margin-left: 50px;
 	}
+
+}
+
+.main-reviews__content--block::after{
+	content: " ";
+	background: url(../img/sprite.png);
+	width: 26px;
+	height: 43px;
+	background-position: -50px -585px;
 }
 
 .main-footer{
