@@ -49,7 +49,6 @@ table {
   /* Путь к файлу со шрифтом */ }
 
 body {
-  position: relative;
   font-family: "KelsonRegular"; }
 
 .clearfix::after {
@@ -603,6 +602,9 @@ body {
 .main-order__form {
   width: 940px;
   height: 610px;
+  position: fixed;
+  top: 20%;
+  left: 21%;
   background-color: #b0b0b0;
   text-transform: uppercase;
   color: aliceblue; }
@@ -618,7 +620,8 @@ body {
       font-size: 27px;
       font-family: "KelsonRegular"; }
     .main-order__form .main-order__left-column span {
-      font-size: 14px; }
+      font-size: 14px;
+      font-family: "KelsonRegular"; }
   .main-order__form .main-order__method-delivery {
     padding-bottom: 80px; }
   .main-order__form .main-order__payment-method {
@@ -628,7 +631,30 @@ body {
     color: #d05d00; }
   .main-order__form .main-order__right-column {
     float: right;
-    width: 455px;
-    height: 455px; }
+    width: 304px;
+    height: 43px; }
     .main-order__form .main-order__right-column h2 {
+      padding-bottom: 20px;
       font-size: 27px; }
+    .main-order__form .main-order__right-column input {
+      display: inline-block; }
+    .main-order__form .main-order__right-column label {
+      width: 25%;
+      padding-right: 30px;
+      text-align: left;
+      float: left;
+      font-size: 18px; }
+    .main-order__form .main-order__right-column .main-oreder__content-bottom {
+      margin-top: 10px; }
+      .main-order__form .main-order__right-column .main-oreder__content-bottom label {
+        float: none;
+        width: 17%;
+        padding-right: 4px;
+        text-align: center;
+        font-size: 15px; }
+      .main-order__form .main-order__right-column .main-oreder__content-bottom input {
+        width: 24px;
+        height: 24px; }
+      .main-order__form .main-order__right-column .main-oreder__content-bottom #big-input {
+        width: 278px;
+        height: 134px; }

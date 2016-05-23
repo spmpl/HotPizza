@@ -1,7 +1,6 @@
 @import "reset", "fonts"; 
 
 body{
-    position: relative;
 	font-family: "KelsonRegular";
 }
 
@@ -730,7 +729,9 @@ body{
     width: 940px;
     height: 610px;
     
-    
+    position: fixed;
+    top: 20%;
+    left: 21%;
     background-color: #b0b0b0;
     text-transform: uppercase;
     color: aliceblue;
@@ -753,6 +754,7 @@ body{
         
         span{
             font-size: 14px;
+            font-family: "KelsonRegular";
         }
         
         }
@@ -771,12 +773,58 @@ body{
     
     .main-order__right-column{
         float: right;
-        width: 455px;
-        height: 455px;
+        width: 304px;
+        height: 43px;
+        
         h2{
+            padding-bottom: 20px;
            font-size: 27px;
+            
         }
-    }
+        
+        input{
+            display: inline-block;
+
+        }
+        
+        label{
+            width: 25%;
+            padding-right: 30px;
+            text-align: left;
+            float: left;
+            font-size: 18px;
+        }
+        
+        .main-oreder__content-bottom{
+            margin-top: 10px;
+            
+            
+            label{
+                float: none;
+                width: 17%;
+                padding-right: 4px;
+                text-align: center;
+                font-size: 15px;
+                
+            }
+            
+            input{
+                width: 24px;
+                height: 24px;
+                
+            }
+            
+            #big-input{
+                width: 278px;
+                height: 134px;
+            }
+            
+            #wishes{
+                
+            }
+
+        }
+            }       
     
     }
 
