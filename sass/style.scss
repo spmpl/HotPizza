@@ -226,11 +226,11 @@ body{
 	margin-bottom: 55px;
 	text-transform: uppercase;
 	font-size: 35px;
-	text-shadow: #253a55 1px 1px 0, #253a55 -1px -1px 0, 
-	#253a55 3px 3px 0, #253a55 1px -1px 0;
+	text-shadow: 0px 7px 10px rgba(0, 0, 0, 0.64);
 	color: #fff;
 	text-align: center;
 	font-family: 'KelsonBold';
+    
 }
 
 .main-menu__pizza-product{
@@ -346,6 +346,7 @@ body{
 
 .main-action__left--collum{
 	float: left;
+        margin-top: 50px;
 
 	color: #d19008;
 
@@ -393,6 +394,7 @@ body{
 
 .main-action__right--collum{
 	float: right;
+    margin-top: 20px;
 }
 
 .main-delivery{
@@ -648,3 +650,73 @@ body{
 		margin-left: 12px;
 	}
 }
+
+.modal-content{
+    display: block;
+    position: absolute;
+    
+    
+    width: 228px;
+    
+    background-color: #ab0000;
+    
+    .modal-content__product-photo{
+        display: inline-block;
+        width: 75px;
+        height: 55px;
+        margin: 20px 15px;
+        
+        img{
+        width: 75px;
+        height: 55px;
+        
+        border: 1px solid #ffae00;
+        border-radius: 10px;
+            box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.32);
+        }
+    }
+    
+    .modal-content__sum-counter,
+    .modal-content__counter{  
+        display: inline-block;
+        align-items: center;
+        vertical-align: top;
+        margin-top: 40px;
+        font-family: "KelsonRegular";
+        font-size: 16px;
+        color: aliceblue;
+        
+        
+    }
+    
+    .modal-content__cross{
+        display: inline-block;
+        align-items: center;
+        vertical-align: top;
+        margin-top: 40px;
+        padding: 0 5px;
+        font-size: 16px;
+        color: #ffae00;
+    }
+    
+    .modal-content__button{
+        display: block;
+        width: 228px;
+        height: 60px;
+        text-align: center;
+        color: aliceblue;
+        font-size: 23px;
+        font-family: "KelsonRegular";
+        text-transform: uppercase;
+        align-items: center;
+        cursor: pointer;
+        
+        b{
+            display: block;
+            padding-top: 25px;
+        }
+        
+    }
+}
+
+
