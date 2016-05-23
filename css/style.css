@@ -49,6 +49,7 @@ table {
   /* Путь к файлу со шрифтом */ }
 
 body {
+  position: relative;
   font-family: "KelsonRegular"; }
 
 .clearfix::after {
@@ -167,8 +168,8 @@ body {
 
 .main-header__pizza-background {
   position: absolute;
-  right: 0;
-  top: 0;
+  right: 0%;
+  top: 1%;
   background: url(../img/pizza-bg.png) no-repeat;
   min-width: 557px;
   height: 914px;
@@ -544,24 +545,27 @@ body {
     margin-top: 15px;
     margin-left: 12px; }
 
-.modal-content {
-  display: block;
+.modal-content__cart {
+  display: none;
   position: absolute;
+  right: 0%;
+  top: 90%;
   width: 228px;
-  background-color: #ab0000; }
-  .modal-content .modal-content__product-photo {
+  background-color: #ab0000;
+  z-index: 0; }
+  .modal-content__cart .modal-content__product-photo {
     display: inline-block;
     width: 75px;
     height: 55px;
     margin: 20px 15px; }
-    .modal-content .modal-content__product-photo img {
+    .modal-content__cart .modal-content__product-photo img {
       width: 75px;
       height: 55px;
       border: 1px solid #ffae00;
       border-radius: 10px;
       box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.32); }
-  .modal-content .modal-content__sum-counter,
-  .modal-content .modal-content__counter {
+  .modal-content__cart .modal-content__sum-counter,
+  .modal-content__cart .modal-content__counter {
     display: inline-block;
     align-items: center;
     vertical-align: top;
@@ -569,7 +573,7 @@ body {
     font-family: "KelsonRegular";
     font-size: 16px;
     color: aliceblue; }
-  .modal-content .modal-content__cross {
+  .modal-content__cart .modal-content__cross {
     display: inline-block;
     align-items: center;
     vertical-align: top;
@@ -577,9 +581,9 @@ body {
     padding: 0 5px;
     font-size: 16px;
     color: #ffae00; }
-  .modal-content .modal-content__button {
+  .modal-content__cart .modal-content__button {
     display: block;
-    width: 228px;
+    width: 227px;
     height: 60px;
     text-align: center;
     color: aliceblue;
@@ -587,7 +591,44 @@ body {
     font-family: "KelsonRegular";
     text-transform: uppercase;
     align-items: center;
-    cursor: pointer; }
-    .modal-content .modal-content__button b {
+    cursor: pointer;
+    background-color: #d90000; }
+    .modal-content__cart .modal-content__button b {
       display: block;
       padding-top: 25px; }
+
+.modal-content__cart-show {
+  display: block; }
+
+.main-order__form {
+  width: 940px;
+  height: 610px;
+  background-color: #b0b0b0;
+  text-transform: uppercase;
+  color: aliceblue; }
+  .main-order__form h1 {
+    padding-top: 35px;
+    padding-bottom: 50px;
+    font-size: 60px;
+    text-align: center; }
+  .main-order__form .main-order__left-column {
+    float: left;
+    margin-left: 45px; }
+    .main-order__form .main-order__left-column p {
+      font-size: 27px;
+      font-family: "KelsonRegular"; }
+    .main-order__form .main-order__left-column span {
+      font-size: 14px; }
+  .main-order__form .main-order__method-delivery {
+    padding-bottom: 80px; }
+  .main-order__form .main-order__payment-method {
+    padding-bottom: 135px; }
+  .main-order__form .total-sum {
+    font-size: 50px;
+    color: #d05d00; }
+  .main-order__form .main-order__right-column {
+    float: right;
+    width: 455px;
+    height: 455px; }
+    .main-order__form .main-order__right-column h2 {
+      font-size: 27px; }

@@ -4,7 +4,6 @@
 	<meta charset="UTF-8">
 	<title>Главная</title>
 	<link rel="stylesheet" href="css/style.css">
-	<script src="js/StackBlur.js"></script>
 </head>
 <body>
 	<header class="main-header">
@@ -27,6 +26,14 @@
 			<div class="main-header__cart">
 				<p>Корзина</p>
 				<span>3999<b>руб</b></span>
+            <div class="modal-content__cart">
+            <div class="modal-content__product-photo"><img src="img/pizza-product.png"></div>
+            <div class="modal-content__sum-counter">699руб</div>
+            <div class="modal-content__cross">X</div>
+            <div class="modal-content__counter">3шт</div>
+            <div class="modal-content__button"><b>Оформить заказ</b></div>
+    
+            </div>                
 			</div>
 		</div>
 		<div class="main-header__pizza-background"></div>
@@ -47,7 +54,8 @@
 				<div class="main-menu__pizza-product">
 					<div class="main-menu__product-cart">  				
 						<p class="main-menu__cash">699<span>р</span></p>
-						<p class="main-menu__add-cart">Добавить <br> в корзину</p>   				
+						<p class="main-menu__add-cart">Добавить <br> в корзину</p>
+                        
 					</div>
 					<div class="main-menu_pizza-product--img"><img src="img/pizza-product.png" alt=""></div>
 					<div class="main-menu__product-name"><p>Нью-Йорк</p></div>
@@ -223,14 +231,32 @@
 		</div>
 	</div>
 </footer>
-    
-<div class="modal-content">
-     <div class="modal-content__product-photo"><img src="img/pizza-product.png"></div>
-    <div class="modal-content__sum-counter">699руб</div>
-    <div class="modal-content__cross">X</div>
-    <div class="modal-content__counter">3шт</div>
-    <div class="modal-content__button"><b>Оформить заказ</b></div>
-    
-</div>
+    <div class="main-order__form">
+    <div class="container clearfix">
+       
+        <form>
+          <h1>Оформление заказа</h1>
+           <div class="main-order__left-column">
+            <div class="main-order__method-delivery">
+                <p>Способ доставки</p>
+                   <input type="radio" name="browser" value="courier"> <span>Курьером</span><Br>
+                   <input type="radio" name="browser" value="you"> <span>Самовывоз</span><Br>
+            </div>
+            <div class="main-order__payment-method">
+                   <p>Способ оплаты</p>
+                    <input type="radio" name="browser" value="courier"> <span>Онлайн по карте(Visa, Mastercard)</span><Br>
+                   <input type="radio" name="browser" value="you"> <span>Оплата курьеру(карта или наличные)</span><Br>
+            </div>
+            <div class="total-sum">
+                сумма 3999 руб
+            </div>
+            </div>
+            <div class="main-order__right-column">
+                <h2>Покупатель</h2>
+            </div>
+        </form>
+    </div>
+    </div>
+<script src="js/script.js"></script>
 </body>
 </html>

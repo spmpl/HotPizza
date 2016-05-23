@@ -1,6 +1,7 @@
 @import "reset", "fonts"; 
 
 body{
+    position: relative;
 	font-family: "KelsonRegular";
 }
 
@@ -157,8 +158,8 @@ body{
 
 .main-header__pizza-background{
 	position: absolute;
-	right: 0;
-	top: 0;
+	right: 0%;
+	top: 1%;
 	background: url(../img/pizza-bg.png) no-repeat;
 	min-width: 557px;
 	height: 914px;
@@ -651,14 +652,16 @@ body{
 	}
 }
 
-.modal-content{
-    display: block;
+.modal-content__cart{
+    display: none;
     position: absolute;
-    
+    right: 0%;
+    top: 90%;
     
     width: 228px;
     
     background-color: #ab0000;
+    z-index: 0;
     
     .modal-content__product-photo{
         display: inline-block;
@@ -701,7 +704,7 @@ body{
     
     .modal-content__button{
         display: block;
-        width: 228px;
+        width: 227px;
         height: 60px;
         text-align: center;
         color: aliceblue;
@@ -710,7 +713,7 @@ body{
         text-transform: uppercase;
         align-items: center;
         cursor: pointer;
-        
+        background-color: #d90000;
         b{
             display: block;
             padding-top: 25px;
@@ -719,4 +722,61 @@ body{
     }
 }
 
+.modal-content__cart-show{
+    display: block;
+}
+
+.main-order__form{
+    width: 940px;
+    height: 610px;
+    
+    
+    background-color: #b0b0b0;
+    text-transform: uppercase;
+    color: aliceblue;
+    
+    h1{
+    padding-top: 35px;
+    padding-bottom: 50px;
+    font-size: 60px;
+    text-align: center;
+    }
+    
+    
+    .main-order__left-column{
+        float: left;
+        margin-left: 45px;
+        p{
+            font-size: 27px;
+            font-family: "KelsonRegular";
+        }
+        
+        span{
+            font-size: 14px;
+        }
+        
+        }
+    
+    .main-order__method-delivery{
+        padding-bottom: 80px;
+    }
+    
+    .main-order__payment-method{
+        padding-bottom: 135px;
+    }
+    .total-sum{
+        font-size: 50px;
+        color: #d05d00;
+    }
+    
+    .main-order__right-column{
+        float: right;
+        width: 455px;
+        height: 455px;
+        h2{
+           font-size: 27px;
+        }
+    }
+    
+    }
 
