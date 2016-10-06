@@ -1,133 +1,78 @@
-@import "reset", "fonts"; 
+@import "reset.scss", "fonts.scss";
 
-body{
-	font-family: "KelsonRegular";
+html, body{
+	font-family: "KelsonRegular", sans-serif;
+	line-height: 1.3;
 }
 
-.clearfix::after{
-	content: "";
-	display: table;
-	clear: both;
-}
-
-.container{
-	width: 940px;
-	margin: 0 auto;
-
-}
-
-.main-header{
-	position: relative;
+.header{
+	padding: 0 10%;
 	background:url('../img/wall.png') no-repeat;
-	min-width: 1300px;
-	height: 520px;
 	box-shadow: -39px 68px 91px 0px #202c42;
-
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
 	text-shadow: 2.3px 1.9px 0 rgba(0, 0, 0, 0.3);
-}
-
-
-
-.main-header__blur-header{
-	height: 147px;
-	width: 100%;
-	margin: -20px auto;
-	position: absolute;
-	top: 20px;
-	filter: blur(10px);
-	-webkit-filter: blur(10px);
-	-moz-filter: blur(10px);
-	-o-filter: blur(10px);
-	-ms-filter: blur(10px);
-	overflow: hidden;
-	z-index: 1;
-}
-
-.main-header__blur-header::after {
-	content: '';
-	height: 100%;
-	width: 100%;
-	background: rgba(255, 255, 255, .2);
-	position: absolute;
-}
-
-.main-header__logo{
-	position: relative;
-	display: inline-block;
-	float: left;
-	margin-top: 10px;
-	z-index: 10;
-}
-
-.main-header__information{
-	position: relative;
-	display: inline-block;
-	margin-top: 35px;
-	margin-left: 50px;
-
-	font-size: 20px;
 	color: #cac9c9;
-	font-style: 'KelsonRegular';
-	z-index: 10;
-	span{
-		font-family: 'KelsonBold';
+
+	.header-content{
+		max-width: 1200px;
+		margin: auto;
 	}
 
-	.main-header__phone-number{
+	.logo{
+		padding: 15px;
+		width: 18%;
 		position: relative;
 		display: inline-block;
-		font-family: 'KelsonBold';
-
-		img{
-			position: absolute;
-			left: -35px;
-			top: -3px;
-		}
 	}
 
-	.main-header__work-time{
-		display: inline-block;
-		margin-right: 75px;
-	}
-}
-
-.main-header__navigation{
-	position: relative;
-	margin-top: 45px;
-	z-index: 10;
-	li{    
-		float: left;
-		display: inline-block;
-		padding-right: 35px; 
+	.info{
+		width: 50%;
+		display: inline-flex;
+		justify-content: space-around;
 		font-size: 20px;
-		&:last-child{
-			padding: 0;
+		.info__time{
+			display: inline-block;
+			padding-right: 50px;
+		}
+		.info__phone{
+			position: relative;
+			display: inline-block;
+			&:after{
+				content: '';
+				position: absolute;
+				background:url('../img/phone-icon.png') no-repeat;
+				left: -35px;
+				top: -3px;
+				width: 28px;
+				height: 28px;
+			}
 		}
 	}
-
-	a{  
-		display: block;
-		text-decoration: none;
-		color: #cac9c9;
-
-		&:hover{
-			color: #cf0000;
+	.nav{
+		display: flex;
+		width: 40%;
+		justify-content: space-between;
+		font-size: 20px;
+		.nav-item{
+			padding-top: 20px;
+		}
+		.nav-link{
+			color: #cac9c9;
+			text-decoration: none;
 		}
 	}
 }
 
-.main-header__cart{
-
+.cart{
 	display: inline-block;
 	position: relative;
 	float: right;
-	margin-top: -70px;
 	width: 228px;
 	height: 80px;
+	margin-top: 30px;
 	border-radius: 10px;
 	box-shadow: 0px 13px 18px 0px rgba(0, 0, 0, 0.31),inset 0px -1px 0px 0px rgba(255, 120, 0, 0.004);
 	background: #ff0000  url("../img/sprite.png") no-repeat;
@@ -154,176 +99,110 @@ body{
 	}
 
 }
-
-.main-header__pizza-background{
-	position: absolute;
-	right: 0%;
-	top: 1%;
-	background: url(../img/pizza-bg.png) no-repeat;
-	min-width: 557px;
-	height: 914px;
-	float: right;
-	z-index: 0;
-}
-
-.main-header__title{
-	margin-top: 165px;
-	text-shadow: 0 6px 18.8px rgba(0, 0, 0, 0.47);
-	color: #ff0000;
-	text-transform: uppercase;
-	font-family: 'KelsonBold';
-	.main-header__title-big{
+.index-title {
+	padding: 100px 0;
+	.title {
+		text-shadow: 0 6px 18.8px rgba(0, 0, 0, 0.47);
+		color: #ff0000;
+		text-transform: uppercase;
+	}
+	.title_size_m {
 		font-size: 69px;
 	}
-	.main-header__title-small{
-		margin-top: 15px;
+	.title_size_s {
 		font-size: 36px;
 	}
 }
 
 .main-menu{
-	display: flex;
 	background: url(../img/bg-wood.png) no-repeat;
-	min-width: 1300px;
-	height: 1780px;
-
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-}
-
-.main-menu__title{
-	position: relative;
-	margin-top: 275px;
-	h1{
+	padding-bottom: 120px;
+	.main-menu__title{
+		padding-top: 40px;
+		position: relative;
 		font-size: 45px;
 		color: #e79e00;
 		text-align: center;
-		text-shadow: #000 1px 1px 0, #000 -1px -1px 0, 
+		text-shadow: #000 1px 1px 0, #000 -1px -1px 0,
 		#000  -1px 1px 0, #000  1px -1px 0;
 		font-family: 'KelsonBold';
-	}
-
-	h1::after{
-		position: absolute;
-		content: ''; 
-		background: url(../img/bg-menu-img.png) no-repeat;
-		min-width: 202px;
-		height: 127px;
-		margin-left: -143px;
-		top: -42px;
-		opacity: 0.5;
-	}
-}
-
-.main-menu__pizza{
-
-}
-
-.main-menu__title--pizza{
-	margin-top: 85px;
-	margin-bottom: 55px;
-	text-transform: uppercase;
-	font-size: 35px;
-	text-shadow: 0px 7px 10px rgba(0, 0, 0, 0.64);
-	color: #fff;
-	text-align: center;
-	font-family: 'KelsonBold';
-    
-}
-
-.main-menu__pizza-product{
-	float: left;
-
-	margin-right: 180px;
-	margin-bottom: 53px;
-	&:nth-child(3n+1){
-		margin-right: 0;
-		float: right;
+		&::after{
+			position: absolute;
+			content: '';
+			background: url(../img/bg-menu-img.png) no-repeat;
+			width: 202px;
+			height: 127px;
+			top: 10px;
+			margin-left: -137px;
+			opacity: 0.5;
+		}
 	}
 }
 
-.main-menu__product-cart{
-	position: relative;
-	top: 15px;
-	width: 183px;
-	height: 50px;
-	background-color: #b00;
-	background-image:linear-gradient(to right, #ffae00 50%, #ccc9c4 50%, #ccc9c4 33%, #ccc9c4 184%);
-	border-radius: 10px;
-	box-shadow: 0 7px 13px rgba(0, 0, 0, 0.55), inset 0 -1px 0 rgba(255, 255, 255, 0.42);
-	cursor: pointer;
-}
-
-.main-menu__cash{
-	position: absolute;
-	top: 8px;
-	left: 7px;
-	display: inline-block;
-	font-size: 35px;
-	font-family: 'KelsonBold';
-
-	span{
-		font-size: 21px;
+.menu-all{
+	padding: 0 10%;
+	.menu-all__title {
+		padding-top: 85px;
+		padding-bottom: 55px;
+		text-transform: uppercase;
+		font-size: 35px;
+		text-shadow: 0px 7px 10px rgba(0, 0, 0, 0.64);
+		color: #fff;
+		font-family: 'KelsonBold';
+		text-align: center;
 	}
-
-}
-
-.main-menu__add-cart{
-	position: absolute;
-	right: 0;
-	top: 10px;
-	left: 97px;
-	display: inline-block;
-	font-size: 16px;
-	text-transform: uppercase;
-	font-family: 'KelsonBold';
-}
-
-.main-menu__product-name{
-	text-align: center;
-	margin-top: 13px;
-	font-family: 'KelsonBold';
-	font-size: 25px;
-	color: #e29a00;
-	text-transform: uppercase;
-	text-shadow: 0 8px 7px rgba(0, 0, 0, 0.55);
-}
-
-
-.main-menu__title--drink{
-	margin-top: 85px;
-	margin-bottom: 55px;
-	text-transform: uppercase;
-	font-size: 35px;
-	text-shadow: #253a55 1px 1px 0, #253a55 -1px -1px 0, 
-	#253a55 3px 3px 0, #253a55 1px -1px 0;
-	color: #fff;
-	text-align: center;
-	font-family: 'KelsonBold';
-}
-
-.main-menu__drink-product{
-	float: left;
-
-	margin-right: 195px;
-	margin-bottom: 53px;
-	&:nth-child(3n+1){
-		margin-right: 0;
-		float: right;
+	.menu-product {
+		display: inline-block;
+		text-align: center;
+		width: 31%;
+		margin-right: 3%;
+		margin-bottom: 30px;
+		&:nth-child(3n+1) {
+			margin-right: 0;
+			float: right;
+		}
+		.menu-product__name{
+			margin-top: 13px;
+			font-family: 'KelsonBold';
+			font-size: 25px;
+			color: #e29a00;
+			text-transform: uppercase;
+			text-shadow: 0 8px 7px rgba(0, 0, 0, 0.55);
+		}
 	}
 }
-
-.main-menu_drink-product--img{
-	margin-left: 40px;
-}
-
+	.product-cart{
+		padding-top: 10px;
+		margin-bottom: 15px;
+		display: inline-block;
+		width: 183px;
+		background-color: #b00;
+		background-image:linear-gradient(to right, #ffae00 50%, #ccc9c4 50%, #ccc9c4 33%, #ccc9c4 184%);
+		border-radius: 10px;
+		box-shadow: 0 7px 13px rgba(0, 0, 0, 0.55), inset 0 -1px 0 rgba(255, 255, 255, 0.42);
+		cursor: pointer;
+		font-family: 'KelsonBold';
+		.product-cart__cash{
+			width: 47%;
+			display: inline-block;
+			vertical-align: middle;
+			font-size: 35px;
+		}
+		.product-cart__add{
+			width: 50%;
+			display: inline-block;
+			vertical-align: middle;
+			font-size: 16px;
+			text-transform: uppercase;
+		}
+	}
 .main-action{
 	background: url(../img/wall.png) no-repeat;
 	min-width: 1300px;
-	height: 677px;
-
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -346,17 +225,14 @@ body{
 
 .main-action__left--collum{
 	float: left;
-        margin-top: 50px;
-
+	margin-top: 50px;
 	color: #d19008;
-
 	.main-action__big-title{
 		font-size: 53px;
 		text-transform: uppercase;
 		padding-bottom: 15px;
 		font-family: "KelsonBold";
 	}
-
 	.main-action__middle-title{
 		font-size: 23px;
 		text-transform: uppercase;
@@ -369,7 +245,6 @@ body{
 
 	.main-action__button{
 		width: 466px;
-		height: 58px;
 		background-color: #ccc9c4;
 		border: 1px solid rgba(0, 0, 0, 0.63);
 		border-radius: 10px;
@@ -400,8 +275,6 @@ body{
 .main-delivery{
 	background: url(../img/delivery-bg.png) no-repeat;
 	min-width: 1300px;
-	height: 846px;
-
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -726,6 +599,7 @@ body{
 }
 
 .main-order__form{
+	display: none;
     width: 940px;
     height: 610px;
     

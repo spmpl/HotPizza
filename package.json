@@ -1,18 +1,13 @@
 {
-  "name": "hot",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
+  "name": "Gulp-scaffold",
+  "version": "0.0.1",
+  "description": "Gulp-scaffold",
+  "main": "index.html",
+  "author": "Igor Pnev",
+  "license": "BSD",
   "devDependencies": {
+    "browser-sync": "^2.17.0",
     "gulp": "^3.9.1",
-    "gulp-concat": "^2.6.0",
-    "gulp-concat-css": "^2.3.0",
-    "gulp-sass": "^2.3.1",
-    "gulp-uncss": "^1.0.5"
+    "gulp-sass": "^2.3.2"
   }
 }
