@@ -1,0 +1,1431 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: KelsonRegular;
+  /* Имя шрифта */
+  src: url("../fonts/KelsonRegular.otf");
+  /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+  font-family: KelsonBold;
+  /* Имя шрифта */
+  src: url("../fonts/KelsonBold.otf");
+  /* Путь к файлу со шрифтом */
+}
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after {
+  content: '';
+  content: none;
+}
+
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+@charset "UTF-8";
+
+@font-face {
+  font-family: KelsonRegular;
+  /* Имя шрифта */
+  src: url("../fonts/KelsonRegular.otf");
+  /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+  font-family: KelsonBold;
+  /* Имя шрифта */
+  src: url("../fonts/KelsonBold.otf");
+  /* Путь к файлу со шрифтом */
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after {
+  content: '';
+  content: none;
+}
+
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@charset "UTF-8";
+
+@font-face {
+  font-family: KelsonRegular;
+  /* Имя шрифта */
+  src: url("../fonts/KelsonRegular.otf");
+  /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+  font-family: KelsonBold;
+  /* Имя шрифта */
+  src: url("../fonts/KelsonBold.otf");
+  /* Путь к файлу со шрифтом */
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after {
+  content: '';
+  content: none;
+}
+
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@charset "UTF-8";
+
+@font-face {
+  font-family: KelsonRegular;
+  /* Имя шрифта */
+  src: url("../fonts/KelsonRegular.otf");
+  /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+  font-family: KelsonBold;
+  /* Имя шрифта */
+  src: url("../fonts/KelsonBold.otf");
+  /* Путь к файлу со шрифтом */
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after {
+  content: '';
+  content: none;
+}
+
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@charset "UTF-8";
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after {
+  content: '';
+  content: none;
+}
+
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: KelsonRegular;
+  /* Имя шрифта */
+  src: url("../fonts/KelsonRegular.otf");
+  /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+  font-family: KelsonBold;
+  /* Имя шрифта */
+  src: url("../fonts/KelsonBold.otf");
+  /* Путь к файлу со шрифтом */
+}
+
+html,
+body {
+  font-family: "KelsonRegular", 'Arial', sans-serif;
+  line-height: 1.3;
+}
+
+.header {
+  padding: 0 10%;
+  background: url("../img/wall.png") no-repeat;
+  box-shadow: -39px 68px 91px 100px #202c42;
+  background-size: cover;
+  text-shadow: 2.3px 1.9px 0 rgba(0, 0, 0, 0.3);
+  color: #cac9c9;
+}
+
+.header .header-content {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.header .logo {
+  padding: 15px;
+  width: 18%;
+  position: relative;
+  display: inline-block;
+}
+
+.header .info {
+  width: 50%;
+  display: inline-flex;
+  justify-content: space-around;
+  font-size: 20px;
+}
+
+.header .info__time {
+  display: inline-block;
+  padding-right: 50px;
+}
+
+.header .info__phone {
+  position: relative;
+  display: inline-block;
+}
+
+.header .info__phone:after {
+  content: '';
+  position: absolute;
+  background: url("../img/phone-icon.png") no-repeat;
+  left: -35px;
+  top: -3px;
+  width: 28px;
+  height: 28px;
+}
+
+.header .nav {
+  display: flex;
+  width: 40%;
+  justify-content: space-between;
+  font-size: 20px;
+}
+
+.header .nav .nav-item {
+  padding-top: 20px;
+}
+
+.header .nav .nav-link {
+  color: #cac9c9;
+  text-decoration: none;
+}
+
+.cart {
+  display: inline-block;
+  position: relative;
+  float: right;
+  width: 228px;
+  height: 80px;
+  margin-top: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 13px 18px 0px rgba(0, 0, 0, 0.31), inset 0px -1px 0px 0px rgba(255, 120, 0, 0.004);
+  background: #ff0000 url("../img/sprite.png") no-repeat;
+  background-position: 107px -704px;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.cart p,
+.cart span {
+  margin: 10px 13px;
+  color: #fff;
+}
+
+.cart p {
+  font-size: 26px;
+}
+
+.cart span {
+  font-size: 23px;
+}
+
+.cart b {
+  font-size: 15px;
+}
+
+.index-title {
+  padding: 100px 0;
+}
+
+.index-title .title {
+  text-shadow: 0 6px 18.8px rgba(0, 0, 0, 0.47);
+  color: #ff0000;
+  text-transform: uppercase;
+}
+
+.index-title .title_size_m {
+  font-size: 69px;
+}
+
+.index-title .title_size_s {
+  font-size: 36px;
+}
+
+.main-menu {
+  background: url("../img/bg-wood.png") no-repeat;
+  background-size: cover;
+  padding-bottom: 120px;
+}
+
+.main-menu__title {
+  padding-top: 40px;
+  position: relative;
+  font-size: 45px;
+  color: #e79e00;
+  text-align: center;
+  text-shadow: #000 1px 1px 0, #000 -1px -1px 0, #000  -1px 1px 0, #000  1px -1px 0;
+  font-family: 'KelsonBold', 'Arial', sans-serif;
+}
+
+.main-menu__title::after {
+  position: absolute;
+  content: '';
+  background: url("../img/bg-menu-img.png") no-repeat;
+  width: 202px;
+  height: 127px;
+  top: 10px;
+  margin-left: -137px;
+  opacity: 0.5;
+}
+
+.menu-all {
+  padding: 0 10%;
+}
+
+.menu-all__title {
+  padding-top: 85px;
+  padding-bottom: 55px;
+  text-transform: uppercase;
+  font-size: 35px;
+  text-shadow: 0px 7px 10px rgba(0, 0, 0, 0.64);
+  color: #fff;
+  font-family: 'KelsonBold';
+  text-align: center;
+}
+
+.menu-all .menu-product {
+  display: inline-block;
+  text-align: center;
+  width: 31%;
+  margin-right: 3%;
+  margin-bottom: 30px;
+}
+
+.menu-all .menu-product:nth-child(3n+1) {
+  margin-right: 0;
+  float: right;
+}
+
+.menu-all .menu-product__name {
+  margin-top: 13px;
+  font-family: 'KelsonBold';
+  font-size: 25px;
+  color: #e29a00;
+  text-transform: uppercase;
+  text-shadow: 0 8px 7px rgba(0, 0, 0, 0.55);
+}
+
+.product-cart {
+  padding-top: 10px;
+  margin-bottom: 15px;
+  display: inline-block;
+  width: 183px;
+  background-color: #b00;
+  background-image: linear-gradient(to right, #ffae00 50%, #ccc9c4 50%, #ccc9c4 33%, #ccc9c4 184%);
+  border-radius: 10px;
+  box-shadow: 0 7px 13px rgba(0, 0, 0, 0.55), inset 0 -1px 0 rgba(255, 255, 255, 0.42);
+  cursor: pointer;
+  font-family: 'KelsonBold';
+}
+
+.product-cart__cash {
+  width: 47%;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 35px;
+}
+
+.product-cart__add {
+  width: 50%;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.main-action {
+  background: url("../img/wall.png") no-repeat;
+  background-size: cover;
+  box-shadow: 0 0 71px 20px;
+}
+
+.main-action__title {
+  padding-top: 53px;
+  padding-bottom: 80px;
+  text-align: center;
+  font-size: 45px;
+  font-family: "KelsonBold";
+  color: #e6e6e6;
+  text-transform: uppercase;
+}
+
+.main-action__content {
+  padding: 0 10%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.main-action .content-left {
+  color: #d19008;
+}
+
+.main-action .content-left__title {
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px black, 0 0 1em black;
+}
+
+.main-action .content-left .title-size-b {
+  font-size: 53px;
+  font-family: "KelsonBold";
+  margin-bottom: 15px;
+}
+
+.main-action .content-left .title-size-m {
+  font-size: 23px;
+  font-family: "KelsonRegular";
+  margin-bottom: 40px;
+}
+
+.main-action .content-left__button {
+  background-color: #ccc9c4;
+  border-radius: 10px;
+  box-shadow: 0 7px 18px rgba(0, 0, 0, 0.26), inset 0 -1px 0 rgba(255, 255, 255, 0.65);
+  cursor: pointer;
+}
+
+.main-action .content-left__text {
+  padding: 18px 38px;
+  text-align-last: center;
+  font-size: 25px;
+  font-family: "KelsonBold";
+  text-transform: uppercase;
+  color: #353535;
+  text-shadow: none;
+}
+
+.main-delivery {
+  background: url("../img/delivery-bg.png") no-repeat;
+  background-size: cover;
+  text-transform: uppercase;
+}
+
+.main-delivery__title {
+  padding-top: 55px;
+  padding-bottom: 55px;
+  text-align: center;
+  color: #fff;
+  font-size: 45px;
+  text-transform: uppercase;
+  font-family: "KelsonBold";
+  text-shadow: 1px 1px 2px black, 0 0 1em black;
+}
+
+.main-delivery__content {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 50px;
+  padding: 0 10%;
+}
+
+.main-delivery .delivery-info {
+  width: 50%;
+}
+
+.main-delivery .delivery-info__text {
+  width: 50%;
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 24px;
+  font-family: "KelsonBold";
+  text-align: left;
+  line-height: 30px;
+}
+
+.content-list__item {
+  margin-bottom: 20px;
+  color: #c38b10;
+  font-size: 21px;
+  font-family: "KelsonRegular";
+}
+
+.delivery-map__text {
+  margin-bottom: 25px;
+  text-align: center;
+  font-size: 21px;
+  color: #d2d0cc;
+}
+
+.main-delivery__advantages {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 100px;
+}
+
+.advantages-content {
+  display: flex;
+  position: relative;
+  margin-right: 100px;
+}
+
+.advantages-content::after {
+  content: "";
+  display: flex;
+  position: absolute;
+  right: -65px;
+  bottom: 0;
+  width: 26px;
+  height: 43px;
+  background: url("../img/sprite.png") no-repeat;
+  background-position: -50px -585px;
+}
+
+.advantages-content:last-child::after {
+  display: none;
+}
+
+.advantages-content__icon {
+  position: relative;
+  background: url("../img/sprite.png") no-repeat;
+}
+
+.advantages-content__text {
+  padding-top: 45px;
+  font-family: "KelsonBold";
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #dbddd9;
+}
+
+/***Icons***/
+
+.icon-phone {
+  width: 77px;
+  height: 77px;
+  margin-left: 50px;
+  background-position: -50px -408px;
+}
+
+.icon-pizza {
+  background-position: -50px -50px;
+  width: 79px;
+  height: 77px;
+}
+
+.icon-car {
+  background-position: -50px -229px;
+  width: 101px;
+  height: 75px;
+}
+
+.main-reviews {
+  background: url("../img/wall.png") no-repeat;
+  min-width: 1300px;
+  height: 633px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.main-reviews__title {
+  margin-bottom: 20px;
+  padding-top: 50px;
+  font-size: 45px;
+  font-family: "KelsonBold";
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  text-shadow: 0 7px 10px rgba(0, 0, 0, 0.22);
+}
+
+.main-reviews__content {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 10%;
+}
+
+.reviews-info {
+  width: 96%;
+  text-align: center;
+  padding: 60px;
+}
+
+.reviews-info__text {
+  color: #fff;
+  font-family: KelsonRegular;
+  font-size: 19px;
+}
+
+.main-reviews__content--block::after {
+  content: " ";
+  background: url("../img/sprite.png");
+  width: 26px;
+  height: 43px;
+  background-position: -50px -585px;
+}
+
+/*************************************************FOOTER*********************************************************/
+
+.main-footer {
+  background: #ffae00;
+}
+
+.main-footer__content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.main-footer .footer-title {
+  padding-top: 35px;
+  padding-bottom: 22px;
+  font-size: 25px;
+  font-family: "KelsonBold";
+}
+
+.contact-footer__text {
+  font-size: 20px;
+}
+
+.nav-footer__item {
+  margin-bottom: 10px;
+}
+
+.nav-footer__link {
+  text-decoration: none;
+  font-size: 20px;
+  color: #000000;
+}
+
+.nav-footer__link:hover {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+.nav-social__item {
+  margin-bottom: 15px;
+}
+
+.nav-social__link {
+  text-decoration: none;
+  color: #000000;
+  font-size: 20px;
+}
+
+.nav-social__img {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.modal-content__cart {
+  display: none;
+  position: absolute;
+  right: 0%;
+  top: 90%;
+  width: 228px;
+  background-color: #ab0000;
+  z-index: 0;
+}
+
+.modal-content__cart .modal-content__product-photo {
+  display: inline-block;
+  width: 75px;
+  height: 55px;
+  margin: 20px 15px;
+}
+
+.modal-content__cart .modal-content__product-photo img {
+  width: 75px;
+  height: 55px;
+  border: 1px solid #ffae00;
+  border-radius: 10px;
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.32);
+}
+
+.modal-content__cart .modal-content__sum-counter,
+.modal-content__cart .modal-content__counter {
+  display: inline-block;
+  align-items: center;
+  vertical-align: top;
+  margin-top: 40px;
+  font-family: "KelsonRegular";
+  font-size: 16px;
+  color: aliceblue;
+}
+
+.modal-content__cart .modal-content__cross {
+  display: inline-block;
+  align-items: center;
+  vertical-align: top;
+  margin-top: 40px;
+  padding: 0 5px;
+  font-size: 16px;
+  color: #ffae00;
+}
+
+.modal-content__cart .modal-content__button {
+  display: block;
+  width: 227px;
+  height: 60px;
+  text-align: center;
+  color: aliceblue;
+  font-size: 23px;
+  font-family: "KelsonRegular";
+  text-transform: uppercase;
+  align-items: center;
+  cursor: pointer;
+  background-color: #d90000;
+}
+
+.modal-content__cart .modal-content__button b {
+  display: block;
+  padding-top: 25px;
+}
+
+.modal-content__cart-show {
+  display: block;
+}
+
+.main-order__form {
+  display: none;
+  width: 940px;
+  height: 610px;
+  position: fixed;
+  top: 20%;
+  left: 21%;
+  background-color: #b0b0b0;
+  text-transform: uppercase;
+  color: aliceblue;
+}
+
+.main-order__form h1 {
+  padding-top: 35px;
+  padding-bottom: 50px;
+  font-size: 60px;
+  text-align: center;
+}
+
+.main-order__form .main-order__left-column {
+  float: left;
+  margin-left: 45px;
+}
+
+.main-order__form .main-order__left-column p {
+  font-size: 27px;
+  font-family: "KelsonRegular";
+}
+
+.main-order__form .main-order__left-column span {
+  font-size: 14px;
+  font-family: "KelsonRegular";
+}
+
+.main-order__form .main-order__method-delivery {
+  padding-bottom: 80px;
+}
+
+.main-order__form .main-order__payment-method {
+  padding-bottom: 135px;
+}
+
+.main-order__form .total-sum {
+  font-size: 50px;
+  color: #d05d00;
+}
+
+.main-order__form .main-order__right-column {
+  float: right;
+  width: 304px;
+  height: 43px;
+}
+
+.main-order__form .main-order__right-column h2 {
+  padding-bottom: 20px;
+  font-size: 27px;
+}
+
+.main-order__form .main-order__right-column input {
+  display: inline-block;
+}
+
+.main-order__form .main-order__right-column label {
+  width: 25%;
+  padding-right: 30px;
+  text-align: left;
+  float: left;
+  font-size: 18px;
+}
+
+.main-order__form .main-order__right-column .main-oreder__content-bottom {
+  margin-top: 10px;
+}
+
+.main-order__form .main-order__right-column .main-oreder__content-bottom label {
+  float: none;
+  width: 17%;
+  padding-right: 4px;
+  text-align: center;
+  font-size: 15px;
+}
+
+.main-order__form .main-order__right-column .main-oreder__content-bottom input {
+  width: 24px;
+  height: 24px;
+}
+
+.main-order__form .main-order__right-column .main-oreder__content-bottom #big-input {
+  width: 278px;
+  height: 134px;
+}
