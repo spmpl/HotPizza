@@ -9,9 +9,6 @@ html, body{
 	padding: 0 10%;
 	background:url('../img/wall.png') no-repeat;
 	box-shadow: -39px 68px 91px 100px #202c42;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
 	background-size: cover;
 	text-shadow: 2.3px 1.9px 0 rgba(0, 0, 0, 0.3);
 	color: #cac9c9;
@@ -116,9 +113,6 @@ html, body{
 
 .main-menu{
 	background: url(../img/bg-wood.png) no-repeat;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
 	background-size: cover;
 	padding-bottom: 120px;
 	&__title{
@@ -204,7 +198,6 @@ html, body{
 	background: url(../img/wall.png) no-repeat;
 	background-size: cover;
 	box-shadow: 0 0 71px 20px;
-	text-shadow: 1px 1px 2px black, 0 0 1em black;
 	&__title {
 		padding-top: 53px;
 		padding-bottom: 80px;
@@ -225,7 +218,7 @@ html, body{
 		color: #d19008;
 		&__title {
 			text-transform: uppercase;
-
+			text-shadow: 1px 1px 2px black, 0 0 1em black;
 		}
 		.title-size-b {
 			font-size: 53px;
@@ -240,9 +233,7 @@ html, body{
 		}
 
 		&__button{
-			width: 466px;
 			background-color: #ccc9c4;
-			border: 1px solid rgba(0, 0, 0, 0.63);
 			border-radius: 10px;
 			box-shadow: 0 7px 18px rgba(0, 0, 0, 0.26), inset 0 -1px 0 rgba(255, 255, 255, 0.65);
 			cursor: pointer;
@@ -259,78 +250,93 @@ html, body{
 	}
 }
 
-.main-delivery{
+.main-delivery {
 	background: url(../img/delivery-bg.png) no-repeat;
-	min-width: 1300px;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
 	background-size: cover;
-
-}
-
-.main-delivery__title{
-	padding-top: 55px;
-	text-align: center;
-	color: #fff;
-	font-size: 45px;
 	text-transform: uppercase;
-	font-family: "KelsonBold";
-	text-shadow: 1px 1px 2px black, 0 0 1em black;
-}
 
-.main-delivery__left--collum{
-	width: 465px;
-	float: left;
-	margin-top: 75px;
-	.main-delivery__content-top{
-		text-transform: uppercase;
+	&__title {
+		padding-top: 55px;
+		padding-bottom: 55px;
+		text-align: center;
 		color: #fff;
-		font-size: 24px;
+		font-size: 45px;
+		text-transform: uppercase;
 		font-family: "KelsonBold";
-		text-align: left;
-		line-height: 30px;
+		text-shadow: 1px 1px 2px black, 0 0 1em black;
 	}
 
-	.main-delivery__content-bottom{
-		margin-top: 20px;
-		text-transform: uppercase;
-		color: #c38b10;
-		font-size: 21px;
-		font-family: "KelsonRegular";
+	&__content {
+		display: flex;
+		justify-content: space-around;
+		margin-bottom: 50px;
+		padding: 0 10%;
+	}
 
-		b{
+	.delivery-info {
+		width: 50%;
+
+		&__text {
+			width: 50%;
+			margin-bottom: 20px;
+			color: #fff;
+			font-size: 24px;
 			font-family: "KelsonBold";
+			text-align: left;
+			line-height: 30px;
 		}
+
 	}
 }
+.content-list__item {
+	margin-bottom: 20px;
+	color: #c38b10;
+	font-size: 21px;
+	font-family: "KelsonRegular";
+}
 
-.main-delivery__right--collum{
-	position: relative;
-	float: right;
-	margin-top: 40px;
-	.main-delivery__map{
+.delivery-map {
+
+	&__text {
+		margin-bottom: 25px;
+		text-align: center;
 		font-size: 21px;
 		color: #d2d0cc;
-		text-transform: uppercase;
-		p{
-			margin-bottom: 25px;
-			text-align: center;
-		}
 	}
+
 }
-
-.main-delivery__content{
+.main-delivery__advantages {
 	display: flex;
-	float: left;
-	width: 100%;
-	margin: 93px 35px 0;
-	.main-delivery__information{
+	justify-content: center;
+	padding-bottom: 100px;
+}
+	.advantages-content {
+		display: flex;
 		position: relative;
-		display: inline-block;
-		margin-right: 170px;
+		margin-right: 100px;
 
-		p {
+		&::after {
+			content: "";
+			display: flex;
+			position: absolute;
+			right: -65px;
+			bottom: 0;
+			width: 26px;
+			height: 43px;
+			background: url(../img/sprite.png) no-repeat;
+			background-position: -50px -585px;
+		}
+		&:last-child{
+			&::after{
+				display: none;
+			}
+		}
+		&__icon {
+			position: relative;
+			background: url(../img/sprite.png) no-repeat;
+		}
+
+		&__text {
 			padding-top: 45px;
 			font-family: "KelsonBold";
 			text-align: center;
@@ -338,67 +344,29 @@ html, body{
 			font-size: 16px;
 			color: #dbddd9;
 		}
-
-		&:last-child{
-			margin-right: 0;
-
-		}
-
-		.main-delivery__icon-phone{	
-			width: 77px;
-			height: 77px;			
-			margin-left: 50px;
-			
-			background: url(../img/sprite.png) no-repeat;
-			background-position: -50px -408px;
-			&::after{
-				content: " ";
-				display: flex;
-				position: absolute;
-                right: -95px;
-                top: 55px;
-				width: 26px;
-				height: 43px;                
-				
-				background: url(../img/sprite.png) no-repeat;
-				background-position: -50px -585px;
-
-			}  			
-		}
-
-		.main-delivery__icon-pizza{
-			margin-left: 70px;
-			background: url(../img/sprite.png) no-repeat;
-			background-position: -50px -50px;
-			width: 79px;
-			height: 77px;
-			
-				&::after{
-				content: " ";
-				display: flex;
-				position: absolute;
-                right: -95px;
-                top: 55px;
-				width: 26px;
-				height: 43px;                
-				
-				background: url(../img/sprite.png) no-repeat;
-				background-position: -50px -585px;
-
-			}   		
-		}
-
-		.main-delivery__icon-car{
-			margin-left: 40px;
-			background: url(../img/sprite.png) no-repeat;
-			background-position: -50px -229px;
-			width: 101px;
-			height: 75px;	
-		}
 	}
+/***Icons***/
+.icon-phone {
+	width: 77px;
+	height: 77px;
+	margin-left: 50px;
+	background-position: -50px -408px;
+
 }
 
-.main-reviews{
+.icon-pizza {
+	background-position: -50px -50px;
+	width: 79px;
+	height: 77px;
+}
+
+.icon-car {
+	background-position: -50px -229px;
+	width: 101px;
+	height: 75px;
+}
+
+.main-reviews {
 	background: url(../img/wall.png) no-repeat;
 	min-width: 1300px;
 	height: 633px;
@@ -410,7 +378,7 @@ html, body{
 }
 
 .main-reviews__title{
-	margin-bottom: 80px;
+	margin-bottom: 20px;
 	padding-top: 50px;
 	font-size: 45px;
 	font-family: "KelsonBold";
@@ -421,28 +389,21 @@ html, body{
 }
 
 .main-reviews__content{
-	margin: 0 35px;;
+	display: flex;
+	justify-content: space-around;
+	padding: 0 10%;
 }
-
-.main-reviews__content--block{
-	float: left;
-	margin-right: 60px;
-	&:last-child{
-		margin-right: 0;
-	}
-	p{
-		width: 250px;
-		text-align: center;
+.reviews-info{
+	width: 96%;
+	text-align: center;
+	padding: 60px;
+	&__text{
 		color: #fff;
 		font-family: KelsonRegular;
 		font-size: 19px;
 	}
-
-	img{
-		margin-left: 50px;
-	}
-
 }
+
 
 .main-reviews__content--block::after{
 	content: " ";
@@ -452,63 +413,50 @@ html, body{
 	background-position: -50px -585px;
 }
 
-.main-footer{
-	height: 340px;
-	background: #ffae00;
+/*************************************************FOOTER*********************************************************/
 
-	.main-footer__title{ 
+.main-footer {
+	background: #ffae00;
+	&__content {
+		display: flex;
+		justify-content: space-around;
+	}
+	.footer-title {
 		padding-top: 35px;
 		padding-bottom: 22px;
 		font-size: 25px;
 		font-family: "KelsonBold";
 	}
-
-	a{
-		color: #000;
-		font-size: 20px;
-		text-decoration: none;
-
-		&:hover{
-			color: #fff;
-		}
+}
+.contact-footer__text{
+	font-size: 20px;
+}
+.nav-footer__item{
+	margin-bottom: 10px;
+}
+.nav-footer__link{
+	text-decoration: none;
+	font-size: 20px;
+	color: #000000;
+	&:hover{
+		text-decoration: underline;
+		color: #ffffff;
 	}
 }
 
-.main-footer__collum-left{
-	float: left;
-	margin-right: 125px;
-
-	p{
-		font-size: 20px;
-		font-family: "KelsonRegular";
-		color: #000000;
-	}
-
-	.main-footer__collum-left--text-top{
-		padding-bottom: 30px;
-	}
+.nav-social__item{
+	margin-bottom: 15px;
 }
 
-.main-footer__collum-middle{
-	float: left;
-	li{
-		margin-bottom: 10px;
-	}
-
+.nav-social__link{
+	text-decoration: none;
+	color: #000000;
+	font-size: 20px;
 }
-
-.main-footer__collum-right{
-	float: right;
-	margin-right: 120px;
-	.main-footer__social{
-		position: relative;
-	}
-	p{  
-		position: absolute;
-		display: inline-block;
-		margin-top: 15px;
-		margin-left: 12px;
-	}
+.nav-social__img{
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 10px;
 }
 
 .modal-content__cart{
